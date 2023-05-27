@@ -21,8 +21,13 @@
 - New Checks ✅✅ by [@ammar-admed-butt](https://www.linkedin.com/in/ammar-ahmed-butt).
 
 ##### Credits
+
 - Robot designed and developed originally by **[Mergeable]**
----
+
+## License
+
+MIT © [Ammar-Ahmed-Butt](https://github.com/ammar-ahmed-butt)
+
 [comment-if-guidelines-not-met]: https://mergeable.readthedocs.io/en/latest/recipes.html#comment-if-guidelines-not-met
 [comment]: https://mergeable.readthedocs.io/en/latest/actions/comment.html
 [staleness]: https://mergeable.readthedocs.io/en/latest/recipes.html#check-stale-pr-and-issues
