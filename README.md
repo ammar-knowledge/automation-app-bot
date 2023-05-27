@@ -11,8 +11,6 @@
   <img alt="Docker Release" src="https://github.com/Ammar-Knowledge/automation-app-bot/actions/workflows/docker.yml/badge.svg?branch=master">
   <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/Ammar-Knowledge/automation-app-bot/github-pages?label=Github%20Deployment">
  </p>
-  
----
 
 <p align="left">
   <a href="https://github.com/apps/automation-app-bot"> </a>
