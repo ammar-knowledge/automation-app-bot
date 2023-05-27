@@ -26,7 +26,7 @@
     "express-prometheus-middleware": "^1.2.0",
     "handlebars": "^4.7.6",
     "jira-client": "^8.2.2",
-    "js-yaml": "^3.14.0",
+    "js-yaml": "^4.0.0",
     "lodash": "^4.17.20",
     "minimatch": "^3.0.4",
     "moment-timezone": "^0.5.31",
