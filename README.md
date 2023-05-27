@@ -19,6 +19,9 @@
 
 #### Authors
 - New Checks ✅✅ by [@ammar-admed-butt](https://www.linkedin.com/in/ammar-ahmed-butt).
+
+##### Credits
+- Robot designed and developed originally by **[Mergeable]**
 ---
 [comment-if-guidelines-not-met]: https://mergeable.readthedocs.io/en/latest/recipes.html#comment-if-guidelines-not-met
 [comment]: https://mergeable.readthedocs.io/en/latest/actions/comment.html
@@ -26,3 +29,4 @@
 [configuration]: https://mergeable.readthedocs.io/en/latest/configuration.html
 [automation-app-bot]: https://github.com/apps/automation-app-bot
 [Link]: https://mergeable.readthedocs.io/en/latest/index.html
+[Mergeable]: https://github.com/mergeability/mergeable 
