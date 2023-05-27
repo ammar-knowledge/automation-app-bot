@@ -1,12 +1,12 @@
 {
   "name": "@ammar-ahmed/automation-app-bot",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "<h2 align=\"center\">\r   <img src=\"https://github-production-user-asset-6210df.s3.amazonaws.com/85288256/239511199-329394bc-099d-4f70-8506-7a5492eea248.gif\" alt=\"automation-app-bot\" width=\"350\" height=\"250\">\r   <br>\r   <p>automation-app-bot</p>\r </h2>\r <p align=\"left\">\r   <a href=\"https://github.com/apps/automation-app-bot\"> </a>\r </p>",
-  "author": "Justin Law <hello@justinlaw.org> (https://github.io/mergeability/mergeable)",
+  "author": "Ammar-Ahmed-Butt <ammar.butt@atlassiancommunity.com> (https://ammar-knowledge.github.io/automation-app-bot/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mergeability/mergeable.git"
+    "url": "git+https://github.com/Ammar-Knowledge/automation-app-bot.git"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --exec 'npm start'",
@@ -63,9 +63,9 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/mergeability/mergeable/issues"
+    "url": "https://github.com/Ammar-Knowledge/automation-app-bot/issues"
   },
-  "homepage": "https://github.com/mergeability/mergeable#readme",
+  "homepage": "https://github.com/mAmmar-Knowledge/automation-app-bot#readme",
   "main": "index.js",
   "directories": {
     "doc": "docs",
