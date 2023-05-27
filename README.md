@@ -1,5 +1,11 @@
 <h2 align="center">
-  <a href="https://github.com/apps/automation-app-bot" target="blank"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/85288256/239511199-329394bc-099d-4f70-8506-7a5492eea248.gif" alt="automation-app-bot" width="450" height="350"> </h2>
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/85288256/239511199-329394bc-099d-4f70-8506-7a5492eea248.gif" alt="automation-app-bot" width="450" height="350">
+  <br>
+  <p>automation-app-bot</p>
+</h2>
+<p align="left">
+  <a href="https://github.com/apps/automation-app-bot"> </a>
+</p>  
   
 <p align="center">
   <img alt="npm (tag)" src="https://img.shields.io/npm/v/@ammar-ahmed/automation-app-bot?label=NPM">
@@ -12,9 +18,7 @@
   <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/Ammar-Knowledge/automation-app-bot/github-pages?label=Github%20Deployment">
  </p>
 
-<p align="left">
-  <a href="https://github.com/apps/automation-app-bot"> </a>
-</p>
+
 
 **[automation-app-bot]** helps automate your team's GitHub workflow without a single line of code.
 - Some examples of what you can do:
