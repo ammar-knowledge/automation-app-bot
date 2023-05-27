@@ -18,8 +18,7 @@
   <a href="https://github.com/apps/automation-app-bot"> </a>
 </p>
 
-  
-- **[automation-app-bot]** helps automate your team's GitHub workflow without a single line of code.
+**[automation-app-bot]** helps automate your team's GitHub workflow without a single line of code.
 - Some examples of what you can do:
 - Ensure pull requests follow conventions and [prevent merging][comment-if-guidelines-not-met] when it is not followed.
 - [Notify author of failed guidelines][comment] when opening an issue.
