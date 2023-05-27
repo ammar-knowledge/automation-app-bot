@@ -1,0 +1,7 @@
+- name: npm publish on every push
+
+  # You may pin to the exact commit or the version.
+
+  # uses: shawnbot/npm-publish-action@0c4a3b9e470b35d1501c6295ebf64b39562c3001
+
+  uses: shawnbot/npm-publish-action@v1.0.1
