@@ -1,0 +1,120 @@
+# Default values for mergeable.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+namespace:
+  enabled: true
+  annotations: {}
+  labels: {}
+
+image:
+  repository: "DOCKER_REPO/mergeable"
+  pullPolicy: IfNotPresent
+  tag: ""
+
+ContainerPort: 3000
+ContainerEnvs: {}
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  hosts:
+    - host: chart-example.local
+      paths: []
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+prometheus:
+  enabled: false
+  service: {}
+    # metricInterval: 30s
+    # metricPath: /metrics
+    # metricPortName: http
+    # sampleLimit: 5000
+  rules: {}
+    # - name: mergeable
+    #   rules:
+    #   - alert: mergeable-ErrorRateTooHigh-Warning
+    #     expr: sum(rate(nginx_ingress_controller_requests{ingress="mergeable",status=~"5.{2}|4[1-9].|40[^14]"}[1m])) / sum(rate(nginx_ingress_controller_requests{ingress="mergeable"}[1m])) > 0.01
+    #     for: 10m
+    #     labels:
+    #       slack: $channel
+    #       severity: warning
+    #     annotations:
+    #       summary: Mergeable error rate greater than 1% in the last 10m
+    #       description: Mergeable has an HTTP error response rate of {{ $value }}% in the last 10m
+
+## Redis for cache
+redis:
+  master:
+    podLabels: {}
+    service:
+      labels: {}
+    resources: {}
+    persistence:
+      enabled: true
+      subPath: "mergeable"
+      size: 512Mi
+  replica:
+    replicaCount: 0
