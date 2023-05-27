@@ -33,7 +33,7 @@ mergeable:
         payload:
           body: >
            :white_check_mark: <h2>Successfully checked</h2>
-           <h3>Commit is yum pum shollay shollay!! /h3>
+           <h3>Commit is yum pum shollay shollay!! </h3>
       - do: checks
         status: 'success'           
     fail:
@@ -55,7 +55,7 @@ mergeable:
         payload:
           body: >
            :white_check_mark: <h2>Successfully checked</h2>
-           <h3>Commit is yum pum shollay shollay!! /h3>
+           <h3>Commit is yum pum shollay shollay!! </h3>
       - do: checks
         status: 'success'  
     fail:
