@@ -25,5 +25,5 @@ appVersion: 1.16.0
 # Dependencies for the chart
 dependencies:
   - name: redis
-    version: 16.12.1
+    version: 16.13.2
     repository: https://charts.bitnami.com/bitnami
