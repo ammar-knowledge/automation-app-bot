@@ -46,7 +46,7 @@
     "standard": "^16.0.3"
   },
   "engines": {
-    "node": "14.21.3"
+    "node": "18.16.0"
   },
   "standard": {
     "env": [
