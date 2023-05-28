@@ -5,63 +5,48 @@ mergeable:
       - do: title
         must_include:
           regex: '(^[A-z]+(-| )[0-9]+(:|-| )(\w|\W)+$)'
-    pass:
-      - do: comment
-        payload:
-          body: >
-           :white_check_mark: <h2>Successfully checked PR Title</h2>
-           <h3>Your PR title is correct - following the template JIRA-IDs, Ready for Review!</h3>
-      - do: checks
-        status: 'success'
-    fail:
-      - do: comment
-        payload:
-          body: >
-            :warning: <h2>Please add Jira ticket id i.e. "JIRA-ID"</h2>
-            <h3>Check Fail!!!!</h3>
-      - do: checks
-        status: 'fail'
-
-  - when: pull_request.*, pull_request_review.*
-    validate:
+          pass:
+            - do: comment
+              payload:
+                body: >
+                :white_check_mark: <h2>Successfully checked PR Title</h2>
+                 <h3>Your PR title is correct - following the template JIRA-IDs, Ready for Review!</h3>
+          fail:
+            - do: comment
+              payload:
+                body: >
+                  :warning: <h2>Please add Jira ticket id i.e. "JIRA-ID"</h2>
+                   <h3>Check Fail!!!!</h3>
       - do: commit
         message:
           regex: '^((build|chore|ci|docs|feat|fix|perf|refactor|revert|update|create|style|test)(\(\w+\))?(!)?(: (.*\s*)*))|(Merge (.*\s*)*)|(Initial commit$)'
           message: 'summarize the fix in less than 72 characters'
-    pass:
-      - do: comment
-        payload:
-          body: >
-           :white_check_mark: <h2>Successfully checked</h2>
-           <h3>Commit is yum pum shollay shollay!! </h3>
-      - do: checks
-        status: 'success'           
-    fail:
-      - do: comment
-        payload:
-          body: >
-            :warning: <h2>Why? you dumb ass bitch PTCL</h2>
-      - do: checks
-        status: 'fail'
-
-  - when: pull_request.*, pull_request_review.*,commit.*
-    validate:
+        pass:
+          - do: comment
+            payload:
+              body: >
+              :white_check_mark: <h2>Successfully checked</h2>
+               <h3>Commit following proper Conventional commits pattern!! </h3>        
+        fail:
+          - do: comment
+            payload:
+              body: >
+                :warning: <h2>Please follow proper conventions!</h2>
       - do: commit
         must_include:
           regex: '(^[A-z]+(-| )[0-9]+(:|-| )(\w|\W)+$)'
-          message: 'JIRA-ID is not included, fix it'
-    pass:
-      - do: comment
-        payload:
-          body: >
-           :white_check_mark: <h2>Successfully checked</h2>
-           <h3>Commit is yum pum shollay shollay!! </h3>
-      - do: checks
-        status: 'success'  
-    fail:
-      - do: comment
-        payload:
-          body: >
-            :warning: <h2>Why? you dumb ass bitch PTCL</h2>
-      - do: checks
-        status: 'fail'
+          message: 
+        pass:
+          - do: comment
+            payload:
+              body: >
+              :white_check_mark: <h2>Successfully checked</h2>
+               <h3>Commit is contains Jira Ticket ID, now it can be merged after apporval from the lead</h3>
+        fail:
+          - do: comment
+            payload:
+              body: >
+                :warning: <h2>Why? you dumb ass bitch PTCL</h2>
+  - do: checks
+    status: 'pass'
+    
