@@ -8,7 +8,7 @@
 </p>  
   
 <p align="center">
-  <img alt="npm (tag)" src="https://img.shields.io/npm/v/@ammar-ahmed/automation-app-bot?label=NPM">
+  <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@ammar-ahmed/automation-app-bot">  
   <img alt="npm (tag)" src="https://img.shields.io/badge/Ammar--Ahmed--Butt-Package--automation--app--bot-brightgreen">
   <img alt="GitHub" src="https://img.shields.io/github/license/Ammar-Knowledge/automation-app-bot">
   <img alt="CI" src="https://github.com/Ammar-Knowledge/automation-app-bot/actions/workflows/testing.yml/badge.svg?branch=master">
