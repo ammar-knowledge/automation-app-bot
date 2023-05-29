@@ -172,5 +172,5 @@ test('correct files are considered based on file status setting', async () => {
 })
 
 const createMockContext = (files) => {
-  return Helper.mockContext({ files: files })
+  return Helper.mockContext({ files })
 }

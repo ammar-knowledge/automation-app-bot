@@ -45,7 +45,7 @@ test('return error if inputs are not in expected format', async () => {
 })
 
 const expectMatchToBe = (match, input, result) => {
-  const rule = { begins_with: { match: match } }
+  const rule = { begins_with: { match } }
   const res = beginsWith.process(validatorContext, input, rule)
   expect(res.status).toBe(result)
 }

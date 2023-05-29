@@ -80,7 +80,7 @@ test('fail gracefully if content is not found', async () => {
 })
 
 const createMockContext = (files, fileContent) => {
-  const context = Helper.mockContext({ files: files })
+  const context = Helper.mockContext({ files })
 
   context.octokit.repos.getContent = () => {
     return Promise.resolve({

@@ -62,6 +62,6 @@ test('checks that advance setting of must_include works', async () => {
 })
 
 const mockContext = headRef => {
-  const context = Helper.mockContext({ headRef: headRef })
+  const context = Helper.mockContext({ headRef })
   return context
 }

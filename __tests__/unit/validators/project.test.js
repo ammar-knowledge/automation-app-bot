@@ -47,5 +47,5 @@ const createMockContext = ({ description, number }) => {
     { content_url: 'testRepo/issues/2' }
   ]
 
-  return Helper.mockContext({ body: description, number: number, repoProjects: repoProjects, projectColumns: projectColumns, projectCards: projectCards })
+  return Helper.mockContext({ body: description, number, repoProjects, projectColumns, projectCards })
 }

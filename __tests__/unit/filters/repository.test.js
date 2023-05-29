@@ -194,6 +194,6 @@ test('must_exclude name passes', async () => {
 })
 
 const mockContext = (repoPrivate, repoTopics, repoName) => {
-  const context = Helper.mockContext({ repoPrivate: repoPrivate, repoTopics: repoTopics, repoName: repoName })
+  const context = Helper.mockContext({ repoPrivate, repoTopics, repoName })
   return context
 }

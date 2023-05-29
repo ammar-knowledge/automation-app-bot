@@ -126,7 +126,7 @@ test('that it validates ends_with correctly', async () => {
   const settings = {
     do: 'label',
     ends_with: {
-      match: match
+      match
     }
   }
 

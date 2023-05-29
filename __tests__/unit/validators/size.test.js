@@ -584,6 +584,6 @@ describe('Size Ignore comment functionality', () => {
 
 const createMockContext = (files) => {
   return Helper.mockContext({
-    files: files
+    files
   })
 }

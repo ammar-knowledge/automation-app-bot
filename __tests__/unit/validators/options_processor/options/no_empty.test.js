@@ -16,7 +16,7 @@ const validatorContext = {
 }
 
 const verify = (enabled, input, inputArr, result) => {
-  const rule = { no_empty: { enabled: enabled } }
+  const rule = { no_empty: { enabled } }
   let res = noEmpty.process(validatorContext, input, rule)
   expect(res.status).toBe(result)
 

@@ -85,7 +85,7 @@ describe('begins_with', () => {
     return {
       do: 'title',
       begins_with: {
-        match: match
+        match
       }
     }
   }
@@ -122,7 +122,7 @@ describe('ends_with', () => {
     return {
       do: 'title',
       ends_with: {
-        match: match
+        match
       }
     }
   }
@@ -178,6 +178,6 @@ test('checks that it fail when include regex is in title', async () => {
 })
 
 const mockContext = title => {
-  const context = Helper.mockContext({ title: title })
+  const context = Helper.mockContext({ title })
   return context
 }

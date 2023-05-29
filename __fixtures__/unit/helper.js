@@ -91,10 +91,10 @@ module.exports = {
               if (path === '.github/CODEOWNERS') {
                 return options.codeowners
                   ? resolve({
-                      data: {
-                        content: options.codeowners
-                      }
-                    })
+                    data: {
+                      content: options.codeowners
+                    }
+                  })
                   : throwNotFound()
               }
             })

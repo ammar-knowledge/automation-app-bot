@@ -206,5 +206,5 @@ describe('Or Filter Unit Test', () => {
 })
 
 const createMockContext = (repoTopics = []) => {
-  return Helper.mockContext({ repoTopics: repoTopics })
+  return Helper.mockContext({ repoTopics })
 }

@@ -211,7 +211,7 @@ test('fail when include regex exists and there are no pull requests in check_sui
 })
 
 const mockContext = baseRef => {
-  const context = Helper.mockContext({ baseRef: baseRef })
+  const context = Helper.mockContext({ baseRef })
   return context
 }
 
