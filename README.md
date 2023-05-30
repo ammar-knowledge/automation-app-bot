@@ -11,7 +11,6 @@
   <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@ammar-ahmed/automation-app-bot">  
   <img alt="npm (tag)" src="https://img.shields.io/badge/Ammar--Ahmed--Butt-Package--automation--app--bot-brightgreen">
   <img alt="GitHub" src="https://img.shields.io/github/license/Ammar-Knowledge/automation-app-bot">
-  <img alt="CI" src="https://github.com/Ammar-Knowledge/automation-app-bot/actions/workflows/testing.yml/badge.svg?branch=master">
   <img alt="Pages-Build-Deployment" src="https://github.com/Ammar-Knowledge/automation-app-bot/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master">  
   <img alt="Release" src="https://github.com/Ammar-Knowledge/automation-app-bot/actions/workflows/release.yml/badge.svg?branch=master">
   <img alt="Docker Release" src="https://github.com/Ammar-Knowledge/automation-app-bot/actions/workflows/docker.yml/badge.svg?branch=master">
