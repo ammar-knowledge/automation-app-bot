@@ -27,7 +27,7 @@
     "handlebars": "^4.7.6",
     "jira-client": "^8.2.2",
     "js-yaml": "^4.0.0",
-    "lint": "^0.8.19",
+    "lint": "^1.1.2",
     "lodash": "^4.17.20",
     "minimatch": "^9.0.0",
     "moment-timezone": "^0.5.31",
