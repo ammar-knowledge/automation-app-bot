@@ -68,7 +68,7 @@
   "bugs": {
     "url": "https://github.com/Ammar-Knowledge/automation-app-bot/issues"
   },
-  "homepage": "https://github.com/mAmmar-Knowledge/automation-app-bot#readme",
+  "homepage": "https://github.com/Ammar-Knowledge/automation-app-bot#readme",
   "main": "index.js",
   "directories": {
     "doc": "docs",
