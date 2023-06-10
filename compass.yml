@@ -13,6 +13,9 @@ links:
   - name: Github Flow
     type: PROJECT
     url: 'https://ammar-ahmed-butt.atlassian.net/browse/GF'
+  - name: Sonar-Cloud-Automation-checker-bot
+    type: PROJECT
+    url: 'https://sonarcloud.io/project/overview?id=Ammar-Knowledge_automation-app-bot'
   - name: Process and standards
     type: DOCUMENT
     url: 'https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/overview'
