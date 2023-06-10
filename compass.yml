@@ -1,6 +1,6 @@
 name: automation-app-bot
 id: 'ari:cloud:compass:fe16f236-8ecb-4445-8586-5ebd155a2533:component/639c4a85-a7f7-47da-af17-094b43ea6ccc/ec1c3908-4ad2-4791-a65a-2bcc61a00d19'
-description: automation made easy and fun
+description: Automation made easy and fun!
 configVersion: 1
 typeId: APPLICATION
 ownerId: 'ari:cloud:teams::team/364becde-3535-499b-8d1e-adf8431d1584'
