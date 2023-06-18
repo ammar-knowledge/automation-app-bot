@@ -1,6 +1,6 @@
 version: 2
 mergeable:
-  - when: pull_request.*, pull_request_review.*
+  - when: pull_request.*, pull_request_review.*,push.*
     validate:
       - do: title
         must_include:
@@ -46,7 +46,5 @@ mergeable:
           - do: comment
             payload:
               body: >
-                :warning: <h2>Why? you dumb ass bitch PTCL</h2>
-  - do: checks
-    status: 'pass'
+                :warning: <h2>Please follow proper conventions!</h2>
     
