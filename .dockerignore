@@ -1,4 +1,2 @@
 npm-debug.log
-*.pem
-.env
 coverage
