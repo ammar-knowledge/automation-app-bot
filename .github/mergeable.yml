@@ -4,13 +4,13 @@ mergeable:
     validate:
       - do: commit
         message:
-        - must_include:
-              regex: '^((build|chore|ci|docs|feat|fix|perf|refactor|revert|update|create|style|test)(\(\w+\))?(!)?(: (.*\s*)*))|(Merge (.*\s*)*)|(Initial commit$)'
-              message: |
+            regex: '^((build|chore|ci|docs|feat|fix|perf|refactor|revert|update|create|style|test)(\(\w+\))?(!)?(: (.*\s*)*))|(Merge (.*\s*)*)|(Initial commit$)'
+            message: |
                   Adhere to the branch naming convention described <a href="https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/pages/35232086/PR+Commits+Branching+Standards">there</a>!k        
-        - must_include:
-              regex: '(^[A-z]+(-| )[0-9]+(:|-| )(\w|\W)+$)'
-              message: |
+      - do: commit
+        message:            
+            regex: '(^[A-z]+(-| )[0-9]+(:|-| )(\w|\W)+$)'
+            message: |
                   Jira ID is missing!
       - do: title
         must_include:
