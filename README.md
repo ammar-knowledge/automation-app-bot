@@ -1,7 +1,6 @@
 <h2 align="center">
   <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/85288256/239511199-329394bc-099d-4f70-8506-7a5492eea248.gif" alt="automation-app-bot" width="450" height="335">
-  <br>
-  <p>automation-app-bot</p>
+
 </h2>
 <p align="left">
   <a href="https://github.com/apps/automation-app-bot"> </a>
