@@ -2,7 +2,8 @@ version: 2
 mergeable:
   - when: pull_request.*, pull_request_review.*, status.*, check_suite.*
     validate:
-      - do:  commit
+      - do: commit
+        message:
         and:
           - and:
               - must_include:
