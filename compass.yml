@@ -7,7 +7,7 @@ ownerId: 'ari:cloud:teams::team/364becde-3535-499b-8d1e-adf8431d1584'
 fields:
   tier: 4
 links:
-  - name: Automation Checker Bot
+  - name: Automation App Bot
     type: REPOSITORY
     url: 'https://github.com/Ammar-Knowledge/automation-app-bot'
   - name: Github Flow
