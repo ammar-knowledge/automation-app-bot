@@ -1,30 +1,37 @@
 version: 2
 mergeable:
-  - when: pull_request.*, pull_request_review.*, status.*, check_suite.*
+  - when: pull_request.*, pull_request_review.*
     validate:
       - do: commit
         message:
             regex: '^((build|chore|ci|docs|feat|fix|perf|refactor|revert|update|create|style|test)(\(\w+\))?(!)?(: (.*\s*)*))|(Merge (.*\s*)*)|(Initial commit$)'
             message: Adhere to the branch naming convention described <a href="https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/pages/35232086/PR+Commits+Branching+Standards">there</a>!k     
-
-      - do: commit
-        message:            
-            regex: '(^[A-z]+(-| )[0-9]+(:|-| )(\w|\W)+$)'
-            message: Jira ID is missing!
-            
-      - do: title
-        must_include:
-          regex: '(^[A-z]+(-| )[0-9]+(:|-| )(\w|\W)+$)'
-          
     pass:
     - do: comment
       payload:
            body: >
-            :white_check_mark: <h2>Successfully checked PR Title</h2>
+                 :white_check_mark: <h2>Successfully checked Commits</h2>
+    fail:
+     - do: comment
+       payload:
+            body: >
+                  :warning: <h2>Please follow the coventions</h2>
+                   <h3>Check Fail Adhere to the branch naming convention described <a href="https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/pages/35232086/PR+Commits+Branching+Standards">there</a>!k</h3>
+                   
+  - when: pull_request.*, pull_request_review.*  
+    validate:
+      - do: title
+        must_include:
+          regex: '(^[A-z]+(-| )[0-9]+(:|-| )(\w|\W)+$)'
+    pass:
+    - do: comment
+      payload:
+           body: >
+                 :white_check_mark: <h2>Successfully checked PR Title</h2>
                  <h3>Your PR title is correct - following the template JIRA-IDs, Ready for Review!</h3>
     fail:
      - do: comment
        payload:
             body: >
                   :warning: <h2>Please add Jira ticket id i.e. "JIRA-ID"</h2>
-                   <h3>Check Fail</h3>
+                   <h3>Check Fail Adhere to the branch naming convention described <a href="https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/pages/35232086/PR+Commits+Branching+Standards">there</a>!k</h3>
