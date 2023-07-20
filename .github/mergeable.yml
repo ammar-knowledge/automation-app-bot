@@ -10,20 +10,19 @@ mergeable:
     - do: checks # default pass case
       status: 'success' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
       payload:
-        title: 'Mergeable Run have been Completed!'
+        title: 'Mergeable Run has been Completed!'
         summary: "All the validators have returned 'pass'! \n Here are some stats of the run: \n {{validationCount}} validations were ran"
     fail:
-     - do: checks # default pass case
-       status: 'failure' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
-       payload:
-          title: 'Mergeable Run have been Completed!'
-          summary: |
+    - do: checks # default pass case
+      status: 'failure' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
+      payload:
+        title: 'Mergeable Run has been Completed!'
+        summary: |
                ### Status: {{toUpperCase validationStatus}}
                   Here are some stats of the run:
                   {{validationCount}} validations were ran.
                   {{passCount}} PASSED
-                  {{failCount}} FAILED
-                   
+                  {{failCount}} FAILED       
   - when: pull_request.*, pull_request_review.*  
     validate:
       - do: title
