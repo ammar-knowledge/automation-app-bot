@@ -35,8 +35,8 @@ mergeable:
                  :white_check_mark: <h2>Successfully checked PR Title</h2>
                  <h3>Your PR title is correct - following the template JIRA-IDs, Ready for Review!</h3>
     fail:
-     - do: comment
-       payload:
-            body: >
-                  :warning: <h2>Please add Jira ticket id i.e. "JIRA-ID"</h2>
-                   <h3>Check Fail Adhere to the branch naming convention described <a href="https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/pages/35232086/PR+Commits+Branching+Standards">there</a>!k</h3>
+    - do: comment
+      payload:
+           body: >
+                 :warning: <h2>Please add Jira ticket id i.e. "JIRA-ID"</h2>
+                 <h3>Check Fail Adhere to the branch naming convention described <a href="https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/pages/35232086/PR+Commits+Branching+Standards">here</a></h3>
