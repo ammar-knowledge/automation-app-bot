@@ -4,19 +4,34 @@ mergeable:
     validate:
       - do: commit
         message:
-            regex: '^((build|chore|ci|docs|feat|fix|perf|refactor|revert|update|create|style|test)(\(\w+\))?(!)?(: (.*\s*)*))|(Merge (.*\s*)*)|(Initial commit$)'
-            message: Adhere to the branch naming convention described <a href="https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/pages/35232086/PR+Commits+Branching+Standards">there</a>!k     
+            regex: '(?=.*(^((build:|chore:|ci:|docs:|feat:|fix:|perf:|refactor:|revert:|update:|create:|style:|test:)(( )|())([a-z]\w{1,72})))|(Merge (.*\s*)*)|(Initial commit$))(?=.*([A-z]+(-)[0-9]))'
+            message: Adhere to the branch naming convention described <a href="https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/pages/35232086/PR+Commits+Branching+Standards">here</a>    
     pass:
+    - do: checks # default pass case
+      status: 'success' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
+      payload:
+        title: 'Mergeable Run has been Completed!'
+        summary: "All the validators have returned 'pass'! \n Here are some stats of the run: \n {{validationCount}} validations were ran"
     - do: comment
       payload:
            body: >
                  :white_check_mark: <h2>Successfully checked Commits</h2>
     fail:
+     - do: checks # default pass case
+       status: 'failure' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
+       payload:
+          title: 'Mergeable Run has been Completed!'
+          summary: |
+               ### Status: {{toUpperCase validationStatus}}
+                  Here are some stats of the run:
+                  {{validationCount}} validations were ran.
+                  {{passCount}} PASSED
+                  {{failCount}} FAILED
      - do: comment
        payload:
             body: >
                   :warning: <h2>Please follow the coventions</h2>
-                   <h3>Check Fail Adhere to the branch naming convention described <a href="https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/pages/35232086/PR+Commits+Branching+Standards">there</a>!k</h3>
+                   <h3>Check Fail Adhere to the branch naming convention described <a href="https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/pages/35232086/PR+Commits+Branching+Standards">here</a></h3>
                    
   - when: pull_request.*, pull_request_review.*  
     validate:
