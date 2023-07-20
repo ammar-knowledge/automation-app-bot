@@ -17,8 +17,6 @@
   <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/Ammar-Knowledge/automation-app-bot/github-pages?label=Github%20Deployment">
  </p>
 
-
-
 **[automation-app-bot]** helps automate your team's GitHub workflow without a single line of code.
 - Some examples of what you can do:
 - Ensure pull requests follow conventions and [prevent merging][comment-if-guidelines-not-met] when it is not followed.
