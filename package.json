@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ammar-Knowledge/automation-app-bot.git"
+    "url": "git+https://github.com/ammar-knowledge/automation-app-bot.git"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --exec 'npm start'",
