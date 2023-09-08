@@ -2,5 +2,5 @@
 version: 1
 mergeable:
   use_config_from_pull_request: true
-  use_config_cache: false
-  use_org_as_default_config: false
+  use_config_cache: true
+  use_org_as_default_config: true
