@@ -5,7 +5,7 @@
 </h2>
 <p align="left">
   <a href="https://github.com/apps/automation-app-bot"> </a>
-</p>  
+</p>
   
 <p align="center">
   <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@ammar-ahmed/automation-app-bot">  
