@@ -4,7 +4,7 @@ mergeable:
     validate:
       - do: commit
         message:
-            regex: '(?=.*(^((build:|chore:|ci:|docs:|feat:|fix:|perf:|refactor:|revert:|update:|create:|style:|test:)(( )|())([a-z]\w{1,72})))|(Merge (.*\s*)*)|(Initial commit$))(?=.*([A-z]+(-)[0-9]))'
+            regex: '(?=.*(^((build:|chore:|ci:|docs:|feat:|fix:|perf:|refactor:|revert:|update:|create:|style:|test:)(( )|())([a-z]\w{1,72})))|(Merge(.*\s*)*)|(Initial commit$))(?=.*([A-z]+(-)[0-9]))'
             message: Adhere to the branch naming convention described <a href="https://ammar-ahmed-butt.atlassian.net/wiki/spaces/PMP/pages/35232086/PR+Commits+Branching+Standards">here</a>    
     pass:
     - do: checks # default pass case
