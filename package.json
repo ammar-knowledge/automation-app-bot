@@ -33,7 +33,7 @@
     "lodash": "^4.17.20",
     "minimatch": "^9.0.0",
     "moment-timezone": "^0.5.31",
-    "node": "^21.0.0",
+    "node": "^20.7.0",
     "node-fetch": "^3.0.0",
     "p-iteration": "^1.1.8",
     "probot": "^12.2.8",
