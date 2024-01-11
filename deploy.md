@@ -50,6 +50,8 @@ This happens when you haven't configured the webhook secret correctly in your
 locally running instance. Make sure to set the `SECRET_TOKEN` environment variable
 in `.env` before running `npm run dev`.
 
+Make sure to set the `SECRET_TOKEN` environment variable in the `.env` file before running `npm run dev`.
+
 #### `ERROR probot: Integration not found`
 
 This may occur when running Mergeable using a GitHub Enterpise instance.
