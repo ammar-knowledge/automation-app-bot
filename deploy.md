@@ -44,9 +44,13 @@ Note: if you wish to use a different config file name beside `mergeable.yml`, us
 
 ### Possible issues
 
+Make sure to set the `SECRET_TOKEN` environment variable in the `.env` file before running `npm run dev`.
+
 ####  `400 bad request` / `Error: No X-Hub-Signature found on request`
 
 This happens when you haven't configured the webhook secret correctly in your
+Make sure to set the `SECRET_TOKEN` environment variable
+in `.env` before running `npm run dev`.
 locally running instance. Make sure to set the `SECRET_TOKEN` environment variable
 in `.env` before running `npm run dev`.
 
