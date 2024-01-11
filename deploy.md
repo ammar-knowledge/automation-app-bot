@@ -36,7 +36,8 @@ Make sure to create a private key for the app after it's been registered.
 3. Go to [smee.io](https://smee.io) and create a new webhook OR use the cli by
    running the `smee` command.
 4. Copy `.env.template` to a new file called `.env`, and fill it out.
-5. Run `npm run dev` in your local repository
+5. Make sure to set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host.
+6. Run `npm run dev` in your local repository
 6. Add a repository for your Github app by going to [application settings](https://github.com/settings/installations)
 7. Do a test pull request to check if everything is working
 
@@ -58,5 +59,5 @@ in `.env` before running `npm run dev`.
 
 This may occur when running Mergeable using a GitHub Enterpise instance.
 
-To fix, try making sure you've set the `GHE_HOST` variable in `.env` to the
-hostname of your Enterprise instance. E.g. `GHE_HOST=github.your_company.com`.
+Make sure to set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host.
+E.g. `GHE_HOST=github.your_company.com`.
