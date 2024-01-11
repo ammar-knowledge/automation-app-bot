@@ -39,7 +39,9 @@ Make sure to create a private key for the app after it's been registered.
 5. Run `npm run dev` in your local repository
 6. Add a repository for your Github app by going to [application settings](https://github.com/settings/installations)
 
-Make sure to set the `SECRET_TOKEN` environment variable in the `.env` file before running `npm run dev`.
+Make sure to set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host.
+
+Note: if you wish to use a different config file name beside `mergeable.yml`, use `CONFIG_PATH` environment variable. Config files uses `.github` as base path, see [here](https://github.com/probot/probot/blob/1a19bdd/src/context.ts#L190)   
 7. Do a test pull request to check if everything is working
 
 Note: if you wish to use a different config file name beside `mergeable.yml`, use `CONFIG_PATH` environment variable. Config files uses `.github` as base path, see [here](https://github.com/probot/probot/blob/1a19bdd/src/context.ts#L190)   
