@@ -47,7 +47,7 @@ Note: if you wish to use a different config file name beside `mergeable.yml`, us
 ####  `400 bad request` / `Error: No X-Hub-Signature found on request`
 
 This happens when you haven't configured the webhook secret correctly in your
-locally running instance. Make sure to set the `SECRET_TOKEN` environment variable
+locally running instance. Make sure to set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host
 in `.env` before running `npm run dev`.
 
 Make sure to set the `SECRET_TOKEN` environment variable in the `.env` file before running `npm run dev`.
@@ -57,4 +57,4 @@ Make sure to set the `SECRET_TOKEN` environment variable in the `.env` file befo
 This may occur when running Mergeable using a GitHub Enterpise instance.
 
 To fix, try making sure you've set the `GHE_HOST` variable in `.env` to the
-hostname of your Enterprise instance. E.g. `GHE_HOST=github.your_company.com`.
+hostname of your GitHub Enterprise instance. E.g. `GHE_HOST=github.your_company.com`.
