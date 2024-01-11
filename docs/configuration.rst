@@ -3,7 +3,7 @@
 Configuration
 =====================================
 
-**Mergeable** is **highly** configurable.
+**Mergeable** is **highly** configurable and requires proper configuration for optimal functionality.
 
 First, you'll need to start by creating a ``.github/mergeable.yml`` file in your repository.
 
