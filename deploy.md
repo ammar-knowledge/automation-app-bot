@@ -47,10 +47,8 @@ Note: if you wish to use a different config file name beside `mergeable.yml`, us
 ####  `400 bad request` / `Error: No X-Hub-Signature found on request`
 
 This happens when you haven't configured the webhook secret correctly in your
-locally running instance. Set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host. Make sure to set the `SECRET_TOKEN` environment variable in the `.env` file before running `npm run dev`.
-in `.env` before running `npm run dev` and set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host in `.env`. Set the `SECRET_TOKEN` environment variable in the `.env` file.
-
-Make sure to set the `SECRET_TOKEN` environment variable in the `.env` file before running `npm run dev` and set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host in `.env`. Add a note to set the `SECRET_TOKEN` environment variable in the `.env` file.
+locally running instance. Set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host. Make sure to set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host in `.env before running `npm run dev` and set the `SECRET_TOKEN` environment variable in the `.env` file before running `npm run dev`.
+Add a note to set the `SECRET_TOKEN` environment variable in the `.env` file.
 
 #### `ERROR probot: Integration not found`
 
