@@ -1,18 +1,6 @@
 .. _deploying:
 
-Deploying
----------------------
-If you would like to run your own instance of this plugin, you can do so by forking this repo and deploying it to your own servers or run it locally
-
-The `Probot deployment guide <https://probot.github.io/docs/deployment/>`_ describes this as well
-
-`Create a GitHub App <https://github.com/settings/apps/new>`_ and configure the permissions & events with the following:
-
-**Settings:**
-
-* GitHub app name - **Your app name**
-* Webhook URL - **Your webhook url for listening to events** (for local deployments you can use `smee.io <https://smee.io/>`_))
-* Webhook secret - **Your generated webhook seceret** (GitHub app page has instructions on how to create this)
+If you would like to run your own instance of this plugin, you can do so by forking this repo and deploying it to your own servers or running it locally.
 
 **Permissions:**
 
