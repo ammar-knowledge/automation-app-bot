@@ -32,7 +32,7 @@ Make sure to create a private key for the app after it's been registered.
 
 ## Running Locally
 1. Clone the forked repository on to your machine
-2. Globally install smee-client from with npm ```npm install -g smee-client```
+2. Globally install smee-client from with npm ```npm install -g smee-client``` and ensure that the `GHE_HOST` variable is correctly set in the `.env` file.
 3. Go to [smee.io](https://smee.io) and create a new webhook OR use the cli by
    running the `smee` command.
 4. Copy `.env.template` to a new file called `.env`, and fill it out. Set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host in `.env.
