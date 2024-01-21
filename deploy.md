@@ -9,7 +9,7 @@ The [Probot deployment guide](https://probot.github.io/docs/deployment/) describ
 **Settings:**
 - GitHub app name - **Your app name**
 - Webhook URL - **Your webhook url for listening to events** (for local deployments you can use [smee.io](https://smee.io/))
-- Webhook secret - **Your generated webhook seceret** (GitHub app page has instructions on how to create this)
+- Webhook secret - **Your generated webhook seceret** (GitHub app page has instructions on how to create this). Make sure to set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host.
 
 **Permissions:**
 - Checks - **Read & Write**
@@ -31,8 +31,8 @@ The [Probot deployment guide](https://probot.github.io/docs/deployment/) describ
 Make sure to create a private key for the app after it's been registered.
 
 ## Running Locally
-1. Clone the forked repository on to your machine
-2. Globally install smee-client from with npm ```npm install -g smee-client```
+1. Clone the forked repository on to your machine and set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host in `.env.
+2. Globally install smee-client from with npm ```npm install -g smee-client``` and ensure that the `GHE_HOST` variable is correctly set in the `.env` file.
 3. Go to [smee.io](https://smee.io) and create a new webhook OR use the cli by
    running the `smee` command.
 4. Copy `.env.template` to a new file called `.env`, and fill it out. Set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host in `.env.
@@ -47,10 +47,8 @@ Note: if you wish to use a different config file name beside `mergeable.yml`, us
 ####  `400 bad request` / `Error: No X-Hub-Signature found on request`
 
 This happens when you haven't configured the webhook secret correctly in your
-locally running instance. Set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host. Make sure to set the `SECRET_TOKEN` environment variable in the `.env` file before running `npm run dev`.
-in `.env` before running `npm run dev` and set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host in `.env`. Set the `SECRET_TOKEN` environment variable in the `.env` file.
-
-Make sure to set the `SECRET_TOKEN` environment variable in the `.env` file before running `npm run dev` and set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host in `.env`. Add a note to set the `SECRET_TOKEN` environment variable in the `.env` file.
+locally running instance. Set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host. Make sure to set the `GHE_HOST` variable in the `.env` file to the correct GitHub Enterprise host in `.env before running `npm run dev` and set the `SECRET_TOKEN` environment variable in the `.env` file before running `npm run dev`.
+Add a note to set the `SECRET_TOKEN` environment variable in the `.env` file.
 
 #### `ERROR probot: Integration not found`
 
