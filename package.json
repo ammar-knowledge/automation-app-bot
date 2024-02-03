@@ -17,7 +17,8 @@
     "test:scheduler": "cross-env LOG_LEVEL=warn NODE_ENV=test jest scheduler/test.js && standard",
     "test-watch": "cross-env NODE_ENV=test jest --watch",
     "test-coverage": "cross-env NODE_ENV=test standard && jest --collectCoverage && codecov",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "build": "cross-env NODE_ENV=production nodemon --exec 'npm build'"
   },
   "dependencies": {
     "cache-manager": "^5.0.0",
