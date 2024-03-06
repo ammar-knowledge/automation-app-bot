@@ -1,6 +1,6 @@
 {
   "name": "@ammar-ahmed/automation-app-bot",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "description": "Automation made easy and fun OH Yeah!",
   "author": "Ammar-Ahmed-Butt <ammar.butt@atlassiancommunity.com> (https://ammar-knowledge.github.io/automation-app-bot/)",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "test-watch": "cross-env NODE_ENV=test jest --watch",
     "test-coverage": "cross-env NODE_ENV=test standard && jest --collectCoverage && codecov",
     "lint": "standard --fix",
-    "build": "cross-env NODE_ENV=production nodemon --exec 'npm run build'"
+    "build": "cross-env NODE_ENV=production nodemon --exec 'npm build'"
   },
   "dependencies": {
     "cache-manager": "^5.0.0",
