@@ -18,7 +18,7 @@
     "test-watch": "cross-env NODE_ENV=test jest --watch",
     "test-coverage": "cross-env NODE_ENV=test standard && jest --collectCoverage && codecov",
     "lint": "standard --fix",
-    "build": "cross-env NODE_ENV=production nodemon --exec 'npm build'"
+    "build": "cross-env NODE_ENV=production nodemon --exec 'npm run build'"
   },
   "dependencies": {
     "cache-manager": "^5.0.0",
