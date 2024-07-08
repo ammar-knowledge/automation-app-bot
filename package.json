@@ -32,7 +32,7 @@
     "js-yaml": "^4.0.0",
     "lint": "^1.1.2",
     "lodash": "^4.17.20",
-    "minimatch": "^9.0.0",
+    "minimatch": "^10.0.0",
     "moment-timezone": "^0.5.31",
     "node": "^22.0.0",
     "node-fetch": "^3.0.0",
