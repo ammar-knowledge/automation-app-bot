@@ -52,7 +52,7 @@
     "standard": "^17.0.0"
   },
   "engines": {
-    "node": "22.4.1"
+    "node": "22.5.1"
   },
   "standard": {
     "env": [
