@@ -37,7 +37,7 @@
     "node": "^23.0.0",
     "node-fetch": "^3.0.0",
     "p-iteration": "^1.1.8",
-    "probot": "^13.0.0",
+    "probot": "^13.3.9",
     "prom-client": "^13.0.0",
     "redis": "^4.6.12"
   },
