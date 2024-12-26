@@ -52,8 +52,8 @@
     "standard": "^17.0.0"
   },
   "engines": {
-    "node": "23.5.0"
-  },
+    "node": "23.3.0"
+ },
   "standard": {
     "env": [
       "jest"
