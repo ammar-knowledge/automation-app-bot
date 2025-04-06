@@ -24,6 +24,7 @@
 - [Notify author of failed guidelines][comment] when opening an issue.
 - Schedule [detection for obsolete (stale) issues and pull requests][staleness] and notify author and collaborators.
 
+
 ---
 
 #### Documentation
