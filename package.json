@@ -34,7 +34,7 @@
     "lodash": "^4.17.20",
     "minimatch": "^10.0.0",
     "moment-timezone": "^0.6.0",
-    "node": "^24.0.0",
+    "node": "^23.11.0",
     "node-fetch": "^3.0.0",
     "p-iteration": "^1.1.8",
     "probot": "^13.3.9",
@@ -52,7 +52,7 @@
     "standard": "^17.0.0"
   },
   "engines": {
-    "node": "23.11.0"
+    "node": "23.11.1"
  },
   "standard": {
     "env": [
