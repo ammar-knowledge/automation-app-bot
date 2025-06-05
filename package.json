@@ -39,7 +39,7 @@
     "p-iteration": "^1.1.8",
     "probot": "^13.3.9",
     "prom-client": "^13.0.0",
-    "redis": "^4.6.12"
+    "redis": "^4.7.1"
   },
   "devDependencies": {
     "codecov": "^3.8.3",
