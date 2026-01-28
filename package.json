@@ -31,7 +31,7 @@
     "jira-client": "^8.2.2",
     "js-yaml": "^4.0.0",
     "lint": "^1.1.2",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.23",
     "minimatch": "^10.0.0",
     "moment-timezone": "^0.6.0",
     "node": "^24.0.0",
