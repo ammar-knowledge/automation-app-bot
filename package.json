@@ -21,7 +21,7 @@
     "build": "cross-env NODE_ENV=production nodemon --exec 'npm run build'"
   },
   "dependencies": {
-    "cache-manager": "^6.0.0",
+    "cache-manager": "^6.4.2",
     "cache-manager-ioredis": "^2.1.0",
     "colors": "^1.3.2",
     "express": "^5.0.0",
